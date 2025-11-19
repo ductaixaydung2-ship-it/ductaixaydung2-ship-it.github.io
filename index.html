@@ -11,16 +11,17 @@
 		<div id="info">
 			 FBXLoader - Nurbs
 		</div>
-
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.180.0/three.module.min.js"
+        integrity="sha512-3WHNbkhgeTxXLavPUJlGJ2fTbU/eFp4Ezppd9/6iVgrDCzIRpgkGEaFau9aLuNCxGsBnqrKja6fHYbHiTG5Q6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 		<script type="module">
 
 			import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/0.180.0/three.module.min.js';
 
 			import Stats from 'https://cdnjs.cloudflare.com/ajax/libs/stats.js/7/Stats.min.js';
-			import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three-orbitcontrols@2.110.3/OrbitControls.min.js';
-			import { FBXLoader } from 'https://cdn.jsdelivr.net/npm/three-fbx-loader@1.0.3/index.min.js';
-
+			import threeOrbitcontrols as OrbitControls from 'https://cdn.jsdelivr.net/npm/three-orbitcontrols@2.110.3/+esm'
+			import threeFbxLoader as FBXLoader from 'https://cdn.jsdelivr.net/npm/three-fbx-loader@1.0.3/+esm'
 			let camera, scene, renderer, stats;
 
 			init();
