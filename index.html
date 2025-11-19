@@ -9,21 +9,13 @@
 
 	<body>
 		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - FBXLoader - Nurbs
+			 FBXLoader - Nurbs
 		</div>
 
-		<script type="importmap">
-			{
-				"imports": {
-					"three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.180.0/three.module.min.js",
-					"three/addons/": "https://cdn.jsdelivr.net/npm/three-addons@1.2.0/build/three-addons.min.js"
-				}
-			}
-		</script>
 
 		<script type="module">
 
-			import * as THREE from 'three';
+			import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/0.180.0/three.module.min.js';
 
 			import Stats from 'https://cdnjs.cloudflare.com/ajax/libs/stats.js/7/Stats.min.js';
 			import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three-orbitcontrols@2.110.3/OrbitControls.min.js';
